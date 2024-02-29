@@ -1,6 +1,7 @@
 from environs import Env
 
 env = Env()
+
 env.read_env()
 
 
@@ -17,5 +18,3 @@ SERVICE_ACC_INFO = {
     "client_x509_cert_url": env.str("client_x509_cert_url"),
     "universe_domain": "googleapis.com",
 }
-
-
